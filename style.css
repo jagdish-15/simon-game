@@ -1,0 +1,47 @@
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    height: 9em;
+    width: 9rem;
+    border: 5px solid black;
+    margin: 1rem;
+    border-radius: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    transform: scale(1.01);
+}
+
+#button-1 {
+    background-color: rgb(7, 102, 173);
+}
+
+#button-2 {
+    background-color: rgb(41, 173, 178);
+}
+
+#button-3 {
+    background-color: rgb(197, 232, 152);
+}
+
+#button-4 {
+    background-color: rgb(230, 0, 50);
+}
+
+h3 {
+    text-align: center;;
+}
