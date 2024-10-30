@@ -19,7 +19,9 @@ function levelUp() {
     document.querySelector("h3").innerText = `Level ${++level}`;
     let randomColor = getRandomColor(); 
     gameSeq.push(randomColor);
-    flashSequence(gameSeq, false);
+    setTimeout (() => {
+        flashSequence(gameSeq, false);
+    }, 300);
 }
 
 function flashSequence(gameSeq, flashAll) {
