@@ -4,12 +4,15 @@ let scores = [];
 let started = false;
 let level = 0;
 
-document.addEventListener("keypress", function() {
+function startGame() {
     if (!started) {
         levelUp();
         started = true;
     }
-});
+}
+
+document.addEventListener("keypress", startGame);
+document.addEventListener("click", startGame);
 
 function levelUp() {
     userSeq = [];
